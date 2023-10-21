@@ -1,6 +1,25 @@
 function hasTargetSum(array, target) {
   // Write your algorithm here
+  const seenNumbers = new Set();
+
+ 
+  for (let i = 0; i < arr.length; i++) {
+    const currentNumber = arr[i];
+    const complement = target - currentNumber;
+
+    
+    if (seenNumbers.has(complement)) {
+      return true; 
+
+    
+    seenNumbers.add(currentNumber);
+  }
+
+  
+  return false;
 }
+
+
 
 /* 
   Write the Big O time complexity of your function here
